@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f7f8;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #087f8c;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #087f8c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #05636d;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Doctor Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="doctorName">Doctor Name</label>
+        <input type="text" id="doctorName" name="doctorName"
+               placeholder="Enter doctor name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter email address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter phone number" required>
+
+        <label for="specialist">Doctor Specialist</label>
+        <select id="specialist" name="specialist" required>
+            <option value="">-- Select Specialist --</option>
+            <option value="General Physician">General Physician</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Dentist">Dentist</option>
+            <option value="ENT Specialist">ENT Specialist</option>
+            <option value="Gynecologist">Gynecologist</option>
+            <option value="Neurologist">Neurologist</option>
+            <option value="Orthopedic">Orthopedic</option>
+            <option value="Pediatrician">Pediatrician</option>
+            <option value="Psychiatrist">Psychiatrist</option>
+            <option value="Ophthalmologist">Ophthalmologist</option>
+            <option value="Urologist">Urologist</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="qualification">Qualification</label>
+        <input type="text" id="qualification" name="qualification"
+               placeholder="e.g. MBBS, MD">
+
+        <label for="experience">Years of Experience</label>
+        <input type="number" id="experience" name="experience"
+               min="0" placeholder="Enter years of experience">
+
+        <label for="hospital">Hospital / Clinic Name</label>
+        <input type="text" id="hospital" name="hospital"
+               placeholder="Enter hospital or clinic name">
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <label for="state">State</label>
+        <input type="text" id="state" name="state"
+               placeholder="Enter state">
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city"
+               placeholder="Enter city">
+
+        <label for="address">Clinic / Hospital Address</label>
+        <textarea id="address" name="address" rows="3"
+                  placeholder="Enter complete address"></textarea>
+
+        <label for="license">Medical License Number</label>
+        <input type="text" id="license" name="license"
+               placeholder="Enter medical license number" required>
+
+        <button type="submit">Register Doctor</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
